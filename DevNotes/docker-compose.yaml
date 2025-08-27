@@ -1,0 +1,40 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: devnotes-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/devnotes
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: devnotes-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:6
+    container_name: devnotes-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+
+
+networks:
+  devnet:
+
+volumes:
+  mongo_data:
