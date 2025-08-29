@@ -1,4 +1,4 @@
-# Internship_Docker
+# Internship_HUDE_Labs
 
 This repository contains the work completed during my internship, focused exclusively on Docker, YAML, and Docker Compose. All three projects demonstrate containerization, orchestration, and deployment using these technologies.
 
