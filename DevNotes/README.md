@@ -1,10 +1,10 @@
-# 📝 DevNotes
+# DevNotes
 
 DevNotes is a full-stack **note-taking web application** built for developers. It allows users to **create, view, and delete notes** seamlessly. Designed using the **MERN** stack and containerized with **Docker** and **NGINX**, this app is optimized for efficient deployment and scalability.
 
 ---
 
-## 📆 Tech Stack
+## Tech Stack
 
 * **Frontend:** [React](https://reactjs.org/), [Vite](https://vitejs.dev/)
 * **Backend:** [Node.js](https://nodejs.org/), [Express](https://expressjs.com/)
@@ -14,7 +14,7 @@ DevNotes is a full-stack **note-taking web application** built for developers. I
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 DevNotes/
@@ -40,7 +40,7 @@ DevNotes/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Make sure **Docker** and **Docker Compose** are installed on your system.
 
@@ -58,7 +58,7 @@ cd devnotes
 docker-compose up --build
 ```
 
-### 🔗 Services
+### Services
 
 * **Frontend**: [http\://localhost:3000](http\://localhost:3000)
 * **Backend API**: [http\://localhost:5000/api/notes](http\://localhost:5000/api/notes)
@@ -66,7 +66,7 @@ docker-compose up --build
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint         | Description         |
 | ------ | ---------------- | ------------------- |
@@ -76,7 +76,7 @@ docker-compose up --build
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 The project uses default environment values defined in Docker Compose:
 
@@ -87,7 +87,7 @@ You can customize these inside `docker-compose.yml` or use `.env` files as neede
 
 ---
 
-## 🛠️ Development Notes
+## Development Notes
 
 * The **React frontend** is served through **NGINX** for performance and production readiness.
 * The **Express backend** runs in a separate container and connects to MongoDB via Docker networking.
@@ -95,15 +95,15 @@ You can customize these inside `docker-compose.yml` or use `.env` files as neede
 
 ---
 
-## 📌 Future Enhancements
+## Future Enhancements
 
-* 🗃️ Add note categories/tags
-* 🛡️ User authentication
-* ✏️ Edit existing notes
-* 📄 Markdown support
+* Add note categories/tags
+* User authentication
+* Edit existing notes
+* Markdown support
 
 ---
 
-## ❤️ Support
+## Support
 
 If you find this project helpful, feel free to give it a ⭐ on [GitHub](https://github.com/VedantPanchal23/Internship_Docker.git)!
